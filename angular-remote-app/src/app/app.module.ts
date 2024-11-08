@@ -1,8 +1,13 @@
 import { Injector, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { TestModule } from './test/test.module';
+import { AppRoutingModule } from './app-routing.module';
+import { MatrixPageModule } from './pages/matrix-page/matrix-page.module';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { APP_BASE_HREF, KeyValuePipe } from '@angular/common';
 import { createCustomElement } from '@angular/elements';
 
 @NgModule({
@@ -12,13 +17,18 @@ import { createCustomElement } from '@angular/elements';
   imports: [
     BrowserModule,
     TestModule,
+    AppRoutingModule,
+    MatrixPageModule,
+		MatFormFieldModule,
+		MatTableModule,
+		MatSortModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
 })
 export class AppModule {
   constructor(private injector: Injector) {
     const element = createCustomElement(AppComponent, { injector: injector });
-    customElements.define('angular-app-component', element);
+    customElements.define('app-component', element);
   }
 }

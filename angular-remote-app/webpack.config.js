@@ -30,7 +30,8 @@ module.exports = {
       name: "angularRemoteApp",
       filename: "remoteEntry.js",
       exposes: {
-        "./TestComponent": "./src/app/test/test.component.ts", // component
+        "./MatrixComponent": "./src/app/components/matrix-table/matrix-table.component.ts", // component
+        "./": "./src/app/app.component.ts", // component
         './angularRemoteApp': './src/loadApp.ts', // app
       },
 
@@ -39,6 +40,7 @@ module.exports = {
         "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
         "@angular/common/http": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
         "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+        "@angular/material": { singleton: true, strictVersion: true, requiredVersion:'auto' },
 
         ...sharedMappings.getDescriptors()
       })

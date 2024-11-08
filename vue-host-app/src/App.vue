@@ -9,22 +9,11 @@
         <angular-app-component></angular-app-component>
 
         <!-- Angular test component -->
-        <angular-test-component></angular-test-component>
-
-        <!-- React -->
-        <react-test-component></react-test-component>
-
-        <!-- Vue app component -->
-        <vue-remote-app-component></vue-remote-app-component>
-
-        <!-- Vue web component -->
-        <vue-remote-web-component></vue-remote-web-component>
+        <app-component></app-component>
     </div>
 </template>
 
 <script>
-    // import the web component
-    import('vueRemoteApp/VueRemoteWebComponent')
 
     import { mount } from 'angularRemoteApp/angularRemoteApp';
 
@@ -37,5 +26,5 @@
 </script>
 
 <style>
-
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 </style>
