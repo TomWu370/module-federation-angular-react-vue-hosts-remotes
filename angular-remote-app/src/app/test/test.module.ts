@@ -8,7 +8,8 @@ import { createCustomElement } from '@angular/elements';
 @NgModule({
   declarations: [TestComponent],
   imports: [CommonModule, TestRoutingModule, FormsModule],
-  exports: [TestComponent]
+  exports: [TestComponent],
+  bootstrap: [TestComponent]
 })
 export class TestModule {
   constructor(private injector: Injector) {

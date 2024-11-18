@@ -25,7 +25,7 @@ import { createCustomElement } from '@angular/elements';
 		MatInputModule,
 		MatSortModule,
 		MatSelectModule,
-    RouterModule
+    	RouterModule
 	],
 	exports: [MatrixTableComponent],
 	providers: [{ provide: KeyValuePipe, useClass: KeyValuePipe }]

@@ -6,9 +6,9 @@
 
         <!-- Angular main app web component -->
         <angular-app-component></angular-app-component>
-        <matrix-table-component></matrix-table-component>
         <!-- Angular test component -->
         <app-component></app-component>
+        <router-outlet></router-outlet>
     </div>
 </template>
 

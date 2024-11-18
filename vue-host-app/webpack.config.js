@@ -76,7 +76,7 @@ module.exports = (env = {}) => ({
       directory: path.join(__dirname),
     },
     compress: true,
-    port: 3000,
+    port: 3002,
     hot: true,
     headers: {
       'Access-Control-Allow-Origin': '*',

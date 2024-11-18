@@ -9,6 +9,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { APP_BASE_HREF, KeyValuePipe } from '@angular/common';
 import { createCustomElement } from '@angular/elements';
+import { MatrixPageComponent } from './pages/matrix-page/matrix-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { createCustomElement } from '@angular/elements';
 		MatTableModule,
 		MatSortModule
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent, MatrixPageComponent],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
 })
 export class AppModule {
