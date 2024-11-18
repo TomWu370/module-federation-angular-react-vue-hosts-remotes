@@ -30,8 +30,8 @@ module.exports = {
       name: "angularRemoteApp",
       filename: "remoteEntry.js",
       exposes: {
-        "./MatrixComponent": "./src/app/components/matrix-table/matrix-table.component.ts", // component
-        "./": "./src/app/app.component.ts", // component
+        "./": "./src/app/components/matrix-table/matrix-table.component.ts", // component
+        "./matrix-page": "./src/app/app.component.ts", // component
         './angularRemoteApp': './src/loadApp.ts', // app
       },
 

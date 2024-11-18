@@ -1,12 +1,8 @@
 <template>
     <div>
         <!-- Provide the app root for the angular web components but don't display it -->
-        <app-root style="display: none"></app-root>
 
         <h1>Vue Host App</h1>
-
-        <!-- Angular main app web component -->
-        <angular-app-component></angular-app-component>
 
         <!-- Angular test component -->
         <app-component></app-component>
@@ -19,6 +15,7 @@
 
     // mount the angular app
     mount();
+
 
     export default {
 

@@ -31,9 +31,5 @@ import { createCustomElement } from '@angular/elements';
 	providers: [{ provide: KeyValuePipe, useClass: KeyValuePipe }]
 })
 export class MatrixTableModule {
-  constructor(private injector: Injector) {
-    const element = createCustomElement(MatrixTableComponent, { injector: injector });
-    customElements.define('matrix-table-component', element);
-  }
 }
 
